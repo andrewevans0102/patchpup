@@ -1,0 +1,29 @@
+{
+  "name": "patchpup",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "description": "A small GitHub issue-to-pull-request coding-agent workflow sample",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "install:deps": "npm ci",
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "tsx --test test/api.test.ts",
+    "typecheck": "tsc --noEmit",
+    "patchpup:run": "tsx scripts/patchpup.ts",
+    "opencode:version": "opencode2 --version"
+  },
+  "dependencies": {
+    "@octokit/rest": "21.1.1"
+  },
+  "devDependencies": {
+    "@opencode/cli": "2.3.0",
+    "@types/node": "22.15.30",
+    "tsx": "4.19.4",
+    "typescript": "5.8.3"
+  }
+}
