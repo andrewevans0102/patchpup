@@ -21,7 +21,7 @@
     "@octokit/rest": "21.1.1"
   },
   "devDependencies": {
-    "@opencode/cli": "2.3.0",
+    "@opencode/cli": "2.4.1",
     "@types/node": "22.15.30",
     "tsx": "4.19.4",
     "typescript": "5.8.3"
